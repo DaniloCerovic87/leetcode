@@ -10,7 +10,7 @@ public class PalindromeNumber {
 
     private static boolean isPalindrome(int x) {
         String s = String.valueOf(x);
-        return s.contentEquals(new StringBuilder().reverse());
+        return s.contentEquals(new StringBuilder(s).reverse());
     }
 
 }
