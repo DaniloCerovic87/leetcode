@@ -10,7 +10,6 @@ public class RemoveElement {
         System.out.println("k = " + k1
                 + ", nums = " + Arrays.toString(Arrays.copyOf(nums1, k1)));
 
-        // Example 2
         int[] nums2 = {0, 1, 2, 2, 3, 0, 4, 2};
         int k2 = removeElement(nums2, 2);
         System.out.println("k = " + k2
