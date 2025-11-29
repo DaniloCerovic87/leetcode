@@ -12,24 +12,18 @@ class PlusOne {
 
     private static int[] plusOne(int[] digits) {
         int length = digits.length;
-        int i = length - 1;
-        while(i >= 0) {
+        for(int i = length - 1; i >= 0; i--) {
             if(digits[i] < 9) {
-                digits[i] = digits[i] + 1;
-                break;
+                digits[i]++;
+                return digits;
             }
             digits[i] = 0;
             i--;
         }
 
-        if(digits[0] == 0) {
-            int[] newArray = new int[length + 1];
-            newArray[0] = 1;
-            for(int j = 0; j < length; j++) {
-                newArray[j + 1] = digits[j];
-            }
-            return newArray;
-        } 
-        return digits;
+        int[] newArray = new int[length + 1];
+        newArray[0] = 1;
+        return newArray;
     }
+
 }
