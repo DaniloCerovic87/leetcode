@@ -6,21 +6,20 @@ public class Sqrt {
         System.out.println(mySqrt(2));
         System.out.println(mySqrt(8));
         System.out.println(mySqrt(50));
-
     }
 
     private static int mySqrt(int x) {
-        if(x < 2) {
+        if (x < 2) {
             return x;
         }
 
         int left = 1;
-        int right = x/2;
+        int right = x / 2;
         int ans = 0;
 
-        while(left <= right) {
-            int mid = left + (right - left)/2;
-            if((long)mid * mid <= x) {
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            if ((long) mid * mid <= x) {
                 ans = mid;
                 left = mid + 1;
             } else {
