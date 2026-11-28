@@ -82,6 +82,3 @@ Minimum eating speed: **4**. Required hours in the table represent the full calc
 - Use `long` for accumulated hours to prevent integer overflow.
 - Exit early when the required hours exceed the deadline; success can only be confirmed after all piles are processed.
 
-### Testing
-
-The implementation was logically reviewed against the problem constraints. Test cases cover standard examples, single piles, identical piles, minimum speed, unsorted input, and large values. Automated test execution was not verified in this session.
